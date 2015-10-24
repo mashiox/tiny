@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Tiny Mashio</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script> 
+        <script src="include/index.js"></script>
+    </head>
+    <body>
+        <h1>
+            Mashio.NET Tiny-ish URL Service
+        </h1>
+        
+        <div id="newURI">
+            <p>
+                <input type="text" name="URInput" id="URInput"
+                            placeholder="https://google.com/"/>
+            </p>
+            <p>
+                <input type="button" name="submitInput" id="submitInput"
+                       value="Submit" />
+            </p>
+        </div>
+        
+        <div id="outputURI" style="display:none;">
+            <p id="longURI"></p>
+            <p id="shortURI"></p>
+            <p>
+                <input type="button" name="enterNew" id="enterNew" value="Make Another" />
+            </p>
+        </div>
+        
+        <div id="loading" style="display:none;">
+        </div>
+        
+        <div id="errorConsole" style="display:none;">
+            <p id="status"></p>
+            <p id="error"></p>
+        </div>
+    </body>
+</html>
