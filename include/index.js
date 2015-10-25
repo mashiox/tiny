@@ -29,7 +29,8 @@ $(document).ready(function(){
                     }
                 }
                 catch(err){
-                    alert("Don't know what you're doing.");
+                    $("div#errorConsole p#status").text("0");
+                    $("div#errorConsole p#error").text("AJAX failed to initiate.");
                 }
             });
         }
