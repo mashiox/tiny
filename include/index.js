@@ -11,7 +11,7 @@ $(document).ready(function(){
                 type:   "post",
                 cache:  false,
                 url:    window.location.origin + "/make.php",
-                data:   data,
+                data:   data
             })
             .done(function(m){
                 var back = JSON.parse(m);
